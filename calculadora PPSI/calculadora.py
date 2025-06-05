@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# mensagens de erro
+# mensagens de erro:
 
 def bin_to_dec():
     bin_value = entry.get()
@@ -21,19 +21,19 @@ def dec_to_bin():
         messagebox.showerror("Erro", "Digite um número decimal válido (apenas dígitos 0-9)")
 
 
-root = tk.Tk() # abre janela da calculadora
+root = tk.Tk() # abre a janela da calculadora
 root.title("Conversor Binário <-> Decimal")
 root.geometry("300x200")
 
 
-tk.Label(root, text="Digite o número:", font=("Arial", 12)).pack(pady=10) # titulo
+tk.Label(root, text="Digite o número:", font=("Arial", 12)).pack(pady=10) # título
  
 
-entry = tk.Entry(root, font=("Arial", 12)) # campo de entrada dos digitos
+entry = tk.Entry(root, font=("Arial", 12)) # campo de entrada dos dígitos
 entry.pack()
 
 
-tk.Button(root, text="Binário → Decimal", command=bin_to_dec).pack(pady=5) # botoes de conversao (decimal,binario)
+tk.Button(root, text="Binário → Decimal", command=bin_to_dec).pack(pady=5) # botões de conversão (decimal,binário)
 tk.Button(root, text="Decimal → Binário", command=dec_to_bin).pack(pady=5)
 
 
