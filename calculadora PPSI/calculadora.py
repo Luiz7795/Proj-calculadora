@@ -18,7 +18,7 @@ def dec_to_bin():
         binary = bin(decimal)[2:]
         result_label.config(text=f"Binário: {binary}")
     except ValueError:
-        messagebox.showerror("Erro", "Digite um número decimal válido (apenas dígitos 0-9)")
+        messagebox.showerror("Erro", "Digite um número decimal válido (apenas dígitos de 0 a 9)")
 
 
 root = tk.Tk() # abre a janela da calculadora
